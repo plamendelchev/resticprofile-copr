@@ -11,7 +11,7 @@ Version: 0.32.0
 Release: 0%{?dist}
 License: GPLv3
 Summary: Configuration profiles manager and scheduler for restic backup
-Url: https://creativeprojects.github.io/%{name}/
+Url: https://github.com/creativeprojects/%{name}
 Source0: %{url}/releases/download/v%{version}/resticprofile_no_self_update_%{version}_linux_%{deb_arch}.tar.gz
 ExclusiveArch: x86_64 aarch64
 
