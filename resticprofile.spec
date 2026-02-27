@@ -30,3 +30,6 @@ install -m 755 %{name} %{buildroot}/%{_bindir}/%{name}
 %{_bindir}/%{name}
 
 %changelog
+* Fri Feb 27 2026 Plamen Delchev <plamen.delchev> 0.32.0-0
+- new package built with tito
+
