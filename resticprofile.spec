@@ -1,19 +1,13 @@
 %global debug_package %{nil}
 
-%ifarch x86_64
-%global deb_arch amd64
-%elifarch aarch64
-%global deb_arch arm64
-%endif
-
 Name: resticprofile
 Version: 0.32.0
-Release: 1
+Release: 3
 License: GPLv3
 Summary: Configuration profiles manager and scheduler for restic backup
 Url: https://github.com/creativeprojects/%{name}
-Source0: %{url}/releases/download/v%{version}/resticprofile_no_self_update_%{version}_linux_%{deb_arch}.tar.gz
-ExclusiveArch: x86_64 aarch64
+Source0: %{url}/releases/download/v%{version}/resticprofile_no_self_update_%{version}_linux_amd64.tar.gz
+ExclusiveArch: x86_64
 
 %description
 Configuration profiles manager for restic backup.
@@ -30,6 +24,12 @@ install -m 755 %{name} %{buildroot}/%{_bindir}/%{name}
 %{_bindir}/%{name}
 
 %changelog
+* Sat Feb 28 2026 Plamen Delchev <plamen.delchev> 0.32.0-3
+- Revert "resticprofile.spec: Fix prep macro" (plamen.delchev@gmail.com)
+- Automatic commit of package [resticprofile] minor release [0.32.0-2].
+  (plamen.delchev)
+- resticprofile.spec: Fix prep macro (plamen.delchev@gmail.com)
+
 * Fri Feb 27 2026 Plamen Delchev <plamen.delchev> 0.32.0-1
 - resticprofile.spec: Fix ULR (plamen.delchev@gmail.com)
 - README.md: Create file (plamen.delchev@gmail.com)
