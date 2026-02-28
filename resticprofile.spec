@@ -8,7 +8,7 @@
 
 Name: resticprofile
 Version: 0.32.0
-Release: 1
+Release: 2
 License: GPLv3
 Summary: Configuration profiles manager and scheduler for restic backup
 Url: https://github.com/creativeprojects/%{name}
@@ -30,6 +30,9 @@ install -m 755 %{name} %{buildroot}/%{_bindir}/%{name}
 %{_bindir}/%{name}
 
 %changelog
+* Sat Feb 28 2026 Plamen Delchev <plamen.delchev> 0.32.0-2
+- resticprofile.spec: Fix prep macro (plamen.delchev@gmail.com)
+
 * Fri Feb 27 2026 Plamen Delchev <plamen.delchev> 0.32.0-1
 - resticprofile.spec: Fix ULR (plamen.delchev@gmail.com)
 - README.md: Create file (plamen.delchev@gmail.com)
