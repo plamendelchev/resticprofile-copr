@@ -20,7 +20,7 @@ Configuration profiles manager for restic backup.
 resticprofile is the missing link between a configuration file and restic backup.
 
 %prep
-%autosetup -c
+%setup -q -c
 
 %install
 mkdir -p %{buildroot}/%{_bindir}
