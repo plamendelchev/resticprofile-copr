@@ -8,6 +8,7 @@ Summary: Configuration profiles manager and scheduler for restic backup
 Url: https://github.com/creativeprojects/%{name}
 Source0: %{url}/releases/download/v%{version}/resticprofile_no_self_update_%{version}_linux_amd64.tar.gz
 ExclusiveArch: x86_64
+Requires: restic
 
 %description
 Configuration profiles manager for restic backup.
