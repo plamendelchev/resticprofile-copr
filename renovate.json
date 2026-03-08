@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/^resticprofile\\.spec$/"
+      ],
+      "matchStrings": [
+        "# renovate: depName=(?<depName>\\S+) packageName=(?<packageName>\\S+) datasource=(?<datasource>\\S+)\\s*Version: (?<currentValue>\\S+)"
+      ]
+    }
+  ]
+}

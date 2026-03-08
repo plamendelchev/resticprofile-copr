@@ -1,6 +1,7 @@
 %global debug_package %{nil}
 
 Name: resticprofile
+# renovate: depName=resticprofile packageName=creativeprojects/resticprofile datasource=github-releases
 Version: 0.32.0
 Release: 4
 License: GPLv3
