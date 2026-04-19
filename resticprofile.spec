@@ -2,7 +2,7 @@
 
 Name: resticprofile
 # renovate: depName=resticprofile packageName=creativeprojects/resticprofile datasource=github-releases
-Version: 0.32.0
+Version: 0.33.1
 Release: 4
 License: GPLv3
 Summary: Configuration profiles manager and scheduler for restic backup
